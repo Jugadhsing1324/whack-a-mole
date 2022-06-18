@@ -2,6 +2,7 @@ nose_x=0;
 nose_y=0
 
 function setup(){
+    img=loadImage("https://c.tenor.com/M0k61sHYYCwAAAAi/hammer-break.gif");
     video=createCapture(VIDEO);
     video.size(550,500);
     canvas=createCanvas(550,450);
@@ -14,7 +15,7 @@ function draw(){
     //image
     fill('darkblue');
     stroke('lightpink');
-    square("https://c.tenor.com/M0k61sHYYCwAAAAi/hammer-break.gif",nose_x,nose_y);
+    image(img,nose_x,nose_y);
 }
 
 function modelLoaded(){
